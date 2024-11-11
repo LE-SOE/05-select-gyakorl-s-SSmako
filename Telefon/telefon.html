@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teló</title>
+    <script src="telefon.js"></script>
+</head>
+<body>
+    <div>
+        <p>Időpont:</p>
+        <input id="idopont">
+        <p>SMS-ek száma:</p>
+        <input id="sms">
+        <p>Hívás hossza (p):</p>
+        <input id="hivas">
+    <button onclick="rogzit()">Rögzítés</button>
+    </div>
+    <div>
+        <button onclick="kiertekel()">Számolás</button>
+        <h4>Eredmények:</h4>
+        <p id="osszesen"></p>
+        <p id="legtobbSMS"></p>
+    </div>
+</body>
+</html>
