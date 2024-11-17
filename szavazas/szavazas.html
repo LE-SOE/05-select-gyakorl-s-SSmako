@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="szavazas.js"></script>
+    <title>Savazás</title>
+</head>
+<body>
+    <div>
+        <p>Donald Trump</p>
+        <button onclick="szavaz('T')">Trump</button>
+    </div>
+    <div>
+        <p>Kamala Harris</p>
+        <button onclick="szavaz('H')">Harris</button>
+    </div>
+    <div>
+        <button onclick="kiertekel()">Eredmeny</button>
+    </div>
+    <div>
+        <button onclick="general()">SZAVAZZ!!!!</button>
+    </div>
+    <div>
+        <p>Eredmények</p>
+        <p id="kinyert"></p>
+        <p id="legtobb"></p>
+    </div>
+</body>
+</html>

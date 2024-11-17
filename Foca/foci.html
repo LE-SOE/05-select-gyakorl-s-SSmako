@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focaaaa</title>
+    <script src="foci.js"></script>
+</head>
+<body>
+    <div>
+        <h4>Játékos keresése</h4>
+        <p>Add meg a keresett játékos nevét: </p>
+        <input id="playerName" oninput="searchPlayer()" />
+        <p>Ki lőtt ennél több gólt: </p> <input type="number" id="goal" oninput="searchByGoal()"/>
+        <p>Találatok:</p>
+        <ul id="talalatok">
+
+        </ul>
+
+    </div>
+    <button onclick="topPlayer()">Top 3 góllövő</button>
+    <ul id="topJatekosok">
+        
+    </ul>
+</body>
+</html>

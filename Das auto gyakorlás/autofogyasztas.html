@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Útvonal nyílvántartás</title>
+    <script src="autofogyasztas.js"></script>
+</head>
+<body>
+    Tank: <b id="tank">40</b>l
+    <br />
+    <select id="autok" onchange="autovaltas()">
+        <option value="">Alap</option>
+
+    </select>
+    <br />
+    <input id="tavolsag" type="number"> km 
+
+    <button onclick="utazas()">Utazzunk!</button>
+    <br />
+    <input id="tankolasliter" type="number"> l <button onclick="tankolas()">Tankolj!</button>
+    <div>
+        <h4>Útvonal:</h4>
+        <ul id="utvonal">
+        </ul>
+    </div>
+</body>
+</html>

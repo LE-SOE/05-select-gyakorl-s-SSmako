@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Állatorvos</title>
+    <script src="allatorvos.js"></script>
+</head>
+<body>
+    <div>
+        <label for="gazda_neve">Gazda neve:</label>
+        <input id="gazda_neve">
+    </div>
+    <div>
+        <label for="allat_neve">Állat neve:</label>
+        <input id="allat_neve">
+    </div>
+     <div>
+        <label for="faj">Faj:</label>
+        <select id="faj">
+            <option value="kutya">Gugya</option>
+            <option value="macska">Macsek</option>
+            <option value="hullo">Süllő</option>
+            <option value="lo">Yo</option>
+        </select>
+    </div>
+    <div>
+        <label for="tomeg">Tömege:</label>
+        <input id="tomeg">
+    </div>
+    <div>
+        <label for="kora">Kora:</label>
+        <input type="number" id="kora">
+    </div>
+    <div>
+        <button onclick="rogzit()">Rögzítés</button>
+    </div>
+    <div>
+        <button onclick="statisztika()">Statisztika készítés</button>
+    </div>
+    <div>
+        <button onclick="listaGeneralas()">Állat lista készítés</button>
+    </div>
+    <div>
+        <p>Gugyák</p>
+        <ul id="kutyak">
+
+        </ul>
+        <p>Macsekocskák</p>
+        <ul id="macskak">
+
+        </ul>
+    </div>
+    <div>
+        <p>Állati statisztika:</p>
+        <ul id="stat">
+
+        </ul>
+    </div>
+</body>
+</html>
