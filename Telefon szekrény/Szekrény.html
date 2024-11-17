@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szekrény</title>
+    <script src="Szekrény.js"></script>
+</head>
+<body>
+    <div>
+        <label for="nev">A diák neve:</label>
+    <input list="nevek" id="nev"/>
+
+    <datalist id="nevek"></datalist>
+
+    </div>
+    <div>
+        <label for="telo">A telefon típusa:</label>
+        <select id="telo">
+            <option value="iphone">iPhone 15</option>
+            <option value="samsung">Samsung Galaxy</option>
+            <option value="xiaomi">Xiaomi Redmi note 13</option>
+        </select>
+    </div>
+    <div>
+        <label for="idopont">Időpont:</label>
+        <input type="number" id="idopont">
+    </div>
+    <div>
+        <label for="muvelet">Leadás vagy felvétel?</label>
+        <select id="muvelet">
+            <option value="l">Leadás</option>
+            <option value="f">Felvétel</option>
+        </select>
+    </div>
+    <div>
+        <button onclick="rogzit()">Rögzítés</button>
+    </div>
+    <div>
+        <button onclick="statisztika()">Statisztika</button>
+    </div>
+    <div>
+        <p>Statisztika:</p>
+        <ul id="stat"></ul>
+    </div>
+</body>
+</html>
